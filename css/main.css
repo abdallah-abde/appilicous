@@ -23,6 +23,8 @@
   --font-normal: 400;
   --font-bold: 700;
   --font-black: 900;
+
+  --transition: all ease-in-out 250ms;
 }
 
 *,
@@ -145,6 +147,7 @@ h2 {
   padding: 0.75em 2.5em;
   text-transform: uppercase;
   text-decoration: none;
+  transition: var(--transition);
 }
 
 .btn:not(:last-of-type) {
@@ -160,6 +163,7 @@ h2 {
 .btn--primary:hover,
 .btn--primary:focus {
   background: var(--dark-accent-clr);
+  border: 2px solid var(--dark-accent-clr);
 }
 
 .btn--secondary {
@@ -259,7 +263,7 @@ h2 {
   right: 0;
   font-style: 1.2rem;
   overflow: hidden;
-  transition: all ease-in-out 250ms;
+  transition: var(--transition);
 }
 
 @media (min-width: 725px) {
@@ -313,7 +317,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all ease-in-out 250ms;
+  transition: var(--transition);
 }
 
 @media (min-width: 725px) {
@@ -358,7 +362,7 @@ h2 {
   width: 2em;
   height: 3px;
   background: white;
-  transition: all ease-in-out 250ms;
+  transition: var(--transition);
 }
 
 .hamburger::before {
@@ -422,13 +426,13 @@ h2 {
   .sales-point:first-of-type {
     margin-top: 0;
   }
-}
 
-.promo .bg-primary {
-  text-align: left;
-  padding-left: 7%;
-  padding-top: 7.5em;
-  padding-bottom: 7.5em;
+  .promo .bg-primary {
+    text-align: left;
+    padding-left: 7%;
+    padding-top: 7.5em;
+    padding-bottom: 7.5em;
+  }
 }
 
 .img-box {
@@ -524,15 +528,36 @@ footer a {
   margin: 0.7em 0;
 }
 
+.social-links a {
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  opacity: 0.5;
+}
+
 .nav-footer {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
 }
 
+.nav-footer li {
+  display: block;
+  z-index: 10;
+}
+
 .nav-footer a {
+  display: block;
   text-decoration: none;
   font-weight: var(--font-bold);
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 1em 0;
+}
+
+.nav-footer a:hover {
+  color: var(--main-clr);
 }
 
 .container--footer {
