@@ -11,3 +11,9 @@ I didn't use SASS as Kevin did, it was vanilla CSS.
 
 And this is the repository:
 https://github.com/abdallah-abde/appilicous
+
+### The used languages:
+
+- HTML
+- CSS
+- JS
