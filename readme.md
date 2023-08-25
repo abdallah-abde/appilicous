@@ -7,5 +7,7 @@ https://www.youtube.com/watch?v=aEUkm1as3KE&list=PL4-IK0AVhVjMNfaGdUgGfftCHfSPCu
 
 And here is my version of the site, you can find it [here](https://abdallah-abde.github.io/appilicous/)
 
+I didn't use SASS as Kevin did, it was vanilla CSS.
+
 And this is the repository:
 https://github.com/abdallah-abde/appilicous
